@@ -5,7 +5,7 @@ set -x
 
 # sync rom
 repo init -u https://github.com/LineageOS/android.git -b lineage-19.1
-git clone https://github.com/phhgsi/local_manifest --depth 1 -b main .repo/local_manifests
+git clone https://github.com/Spector0/local_manifest --depth 1 -b main .repo/local_manifests
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
 
 # build rom
